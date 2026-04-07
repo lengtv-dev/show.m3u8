@@ -1,4 +1,4 @@
-name: MOM Auto Update
+name: show Auto Update
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
 
-          git add MOM.w3u
+          git add show.m3u8
           git commit -m "Auto update $(date)" || exit 0
 
           git pull origin main --rebase
